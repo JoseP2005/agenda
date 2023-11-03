@@ -1,8 +1,28 @@
 package interfaz;
+import java.util.ArrayList;
 import java.util.List;
 import dominio.Contacto;
 import dominio.Libreta;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 public class Interfaz{
+    ObjectInputStream obj;
+    File file = new File("contactos.txt");
+    try{
+        obj = new ObjectInputStream(new FileInputStream(file));
+        try{Libreta = (ArrayList<Contacto>)obj.readObject();
+        }catch(Exception e){
+            System.out.println(e);
+        }
+        obj.close();
+        System.out.println("no leido");
+        Libreta = new ArrayList<>();
+    }
     public static void ejecutar(String[] instruccion, Libreta libreta) {
         if (instruccion[0].equalsIgnoreCase("mostrar") && instruccion.length == 1) {
             mostrarLibreta(libreta);
@@ -12,8 +32,9 @@ public class Interfaz{
             System.out.println("Contacto añadido correctamente");
             
         } //else if (instruccion[0].equalsIgnoreCase("borrar") && instruccion.length == 1){
-           // libreta.borrar(new Contacto());
-        //}
+           // Contacto borrarContacto = 
+           // libreta.borrar(contacto);
+      //  }
         else {
             System.out.println("Error en la instrucción");
         }
@@ -27,7 +48,26 @@ public class Interfaz{
         }
         System.out.println("El número total de contactos es: " + libreta.contarContactos());
     }
-    
+    public class ContactoOutput{
+        private FileOutputStream file;
+        private ObjectOutputStream output;
+        
+        public void abrir()
+            throws IOException{
+                file = new FileOutputStream("clientes.csv")
+                output = new ObjectOutputStream(file);
+            }
+        public void cerrar()
+            throws IOException{
+                if (output!=null)
+                output.close();
+            }
+        public void escribir (Contacto contacto)
+        throws IOException{
+            if(output!=null)
+            output.writeObject(contacto);
+        }
+    }
 }
 
  

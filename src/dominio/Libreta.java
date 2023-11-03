@@ -13,10 +13,9 @@ public class Libreta {
     public void agregarContacto(Contacto contacto) {
         contactos.add(contacto);
     }
-    
-    public Libreta borrar(Contacto c){
-        contactos.remove(c);
-        return this;
+
+    public void borrar(Contacto contacto){
+        contactos.remove(contacto);
     }
 
 
