@@ -12,4 +12,4 @@ public class Main{
         String[] instruccion2 = {"mostrar"};
         Interfaz.ejecutar(instruccion2,libreta);
     }
-}
+} 
