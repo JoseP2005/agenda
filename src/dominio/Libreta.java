@@ -9,7 +9,15 @@ public class Libreta {
         this.nombre = nombre;
         contactos = new ArrayList<>();
     }
-   
+
+    public String obtenerDatosCSV() {
+        StringBuilder csvData = new StringBuilder();
+        for (Contacto contacto : contactos) {
+            csvData.append(contacto.getNombre()).append(",").append(contacto.getNumeroDeTelefono()).append("\n");
+        }
+        return csvData.toString();
+    }
+
     public void agregarContacto(Contacto contacto) {
         contactos.add(contacto);
     }
@@ -20,20 +28,13 @@ public class Libreta {
 
 
     public int contarContactos() {
-        return contactos.size(); 
+        return contactos.size();
     }
 
     public List<Contacto> getContactos() {
         return contactos;
     }
-    
-    public String getNombre() {
-        return nombre;
-    }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 
 
     @Override
