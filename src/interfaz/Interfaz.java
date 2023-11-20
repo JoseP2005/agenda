@@ -7,7 +7,7 @@ import java.io.*;
 import java.util.List;
 import java.util.Scanner;
 
-public class Interfaz implements Serializable {
+public class Interfaz{
     private static final long serialVersionUID = 1L;
 
     private Libreta libreta;

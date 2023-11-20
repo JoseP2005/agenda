@@ -1,20 +1,16 @@
 
-F
-java:S1948")Make "libreta" transient or serializable.(«¥Şº8óèÇª¾1
-F
-java:S1948")Make "scanner" transient or serializable.(Ù‘Ğ8ôèÇª¾1
-L	java:S106"+Replace this use of System.out by a logger.(¥³âïùÿÿÿÿ8øèÇª¾1
-G	java:S106"+Replace this use of System.out by a logger.(×µÆ‡8úèÇª¾1
-G	java:S106+"+Replace this use of System.out by a logger.(øÌˆ»8úèÇª¾1
-G	java:S106."+Replace this use of System.out by a logger.(î³­8úèÇª¾1
-L	java:S1068"+Replace this use of System.out by a logger.(óäÿÿûÿÿÿÿ8úèÇª¾1
-L	java:S106:"+Replace this use of System.out by a logger.(Ç£«òùÿÿÿÿ8ûèÇª¾1
-L	java:S106>"+Replace this use of System.out by a logger.(ñ„Ì¬üÿÿÿÿ8™ïÉª¾1
-G	java:S106@"+Replace this use of System.out by a logger.(ùººè8™ïÉª¾1
-L	java:S106E"+Replace this use of System.out by a logger.(Ÿ³Ï¥ÿÿÿÿÿ8›ïÉª¾1
-L	java:S106O"+Replace this use of System.out by a logger.(£´Õòıÿÿÿÿ8›ïÉª¾1
-L	java:S106R"+Replace this use of System.out by a logger.(öğ®¬ûÿÿÿÿ8Ç‰Ïª¾1
+L	java:S106"+Replace this use of System.out by a logger.(¥³âïùÿÿÿÿ8õÜîâ¾1
+G	java:S106"+Replace this use of System.out by a logger.(×µÆ‡8õÜîâ¾1
+G	java:S106+"+Replace this use of System.out by a logger.(øÌˆ»8ıÜîâ¾1
+G	java:S106."+Replace this use of System.out by a logger.(î³­8ıÜîâ¾1
+L	java:S1068"+Replace this use of System.out by a logger.(óäÿÿûÿÿÿÿ8ıÜîâ¾1
+L	java:S106:"+Replace this use of System.out by a logger.(Ç£«òùÿÿÿÿ8ıÜîâ¾1
+L	java:S106>"+Replace this use of System.out by a logger.(ñ„Ì¬üÿÿÿÿ8ıÜîâ¾1
+G	java:S106@"+Replace this use of System.out by a logger.(ùººè8…İîâ¾1
+L	java:S106E"+Replace this use of System.out by a logger.(Ÿ³Ï¥ÿÿÿÿÿ8…İîâ¾1
+L	java:S106O"+Replace this use of System.out by a logger.(£´Õòıÿÿÿÿ8İîâ¾1
+L	java:S106R"+Replace this use of System.out by a logger.(öğ®¬ûÿÿÿÿ8İîâ¾1
 n
-java:S2677Y"LUse or store the value returned from "readLine" instead of throwing it away.(£­—âÿÿÿÿÿ8šïÉª¾1
-G	java:S106e"+Replace this use of System.out by a logger.(Ã¡ğÄ8Ê‰Ïª¾1
-G	java:S106h"+Replace this use of System.out by a logger.(ŸòŞù8Ê‰Ïª¾1
+java:S2677Y"LUse or store the value returned from "readLine" instead of throwing it away.(£­—âÿÿÿÿÿ8İîâ¾1
+G	java:S106e"+Replace this use of System.out by a logger.(Ã¡ğÄ8–İîâ¾1
+G	java:S106h"+Replace this use of System.out by a logger.(ŸòŞù8–İîâ¾1

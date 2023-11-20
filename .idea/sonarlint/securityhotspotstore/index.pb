@@ -9,8 +9,6 @@ I
 src/dominio/Contacto.java,a\c\ac67199163a4416756c8eca29a9738f950131f71
 H
 src/dominio/Libreta.java,b\5\b5267add7c0408f80d6a05b760e9eaf364e9a763
-=
-contactos.txt,7\a\7a24e9f050c8329d4f6d59428bd183d40943b24d
 :
 
 agenda.iml,7\b\7b4dc29085e48bf6dcebe958862d3e849d29bdf7
