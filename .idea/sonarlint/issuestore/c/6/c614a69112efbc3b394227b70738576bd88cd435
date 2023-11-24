@@ -1,16 +1,16 @@
 
-L	java:S106"+Replace this use of System.out by a logger.(¥³âïùÿÿÿÿ8õÜîâ¾1
-G	java:S106"+Replace this use of System.out by a logger.(×µÆ‡8õÜîâ¾1
-G	java:S106+"+Replace this use of System.out by a logger.(øÌˆ»8ıÜîâ¾1
-G	java:S106."+Replace this use of System.out by a logger.(î³­8ıÜîâ¾1
-L	java:S1068"+Replace this use of System.out by a logger.(óäÿÿûÿÿÿÿ8ıÜîâ¾1
-L	java:S106:"+Replace this use of System.out by a logger.(Ç£«òùÿÿÿÿ8ıÜîâ¾1
-L	java:S106>"+Replace this use of System.out by a logger.(ñ„Ì¬üÿÿÿÿ8ıÜîâ¾1
-G	java:S106@"+Replace this use of System.out by a logger.(ùººè8…İîâ¾1
-L	java:S106E"+Replace this use of System.out by a logger.(Ÿ³Ï¥ÿÿÿÿÿ8…İîâ¾1
-L	java:S106O"+Replace this use of System.out by a logger.(£´Õòıÿÿÿÿ8İîâ¾1
-L	java:S106R"+Replace this use of System.out by a logger.(öğ®¬ûÿÿÿÿ8İîâ¾1
+L	java:S106"+Replace this use of System.out by a logger.(¥³âïùÿÿÿÿ8ÉÍô‡À1
+G	java:S106("+Replace this use of System.out by a logger.(×µÆ‡8ËÍô‡À1
+G	java:S1065"+Replace this use of System.out by a logger.(øÌˆ»8ÍÍô‡À1
+G	java:S1068"+Replace this use of System.out by a logger.(î³­8ÍÍô‡À1
+L	java:S106D"+Replace this use of System.out by a logger.(óäÿÿûÿÿÿÿ8ÎÍô‡À1
+L	java:S106F"+Replace this use of System.out by a logger.(Ç£«òùÿÿÿÿ8ÎÍô‡À1
+L	java:S106L"+Replace this use of System.out by a logger.(ñ„Ì¬üÿÿÿÿ8ÏÍô‡À1
+G	java:S106N"+Replace this use of System.out by a logger.(ùººè8ÏÍô‡À1
+L	java:S106S"+Replace this use of System.out by a logger.(Ÿ³Ï¥ÿÿÿÿÿ8ĞÍô‡À1
+L	java:S106`"+Replace this use of System.out by a logger.(£´Õòıÿÿÿÿ8ÒÍô‡À1
+L	java:S106c"+Replace this use of System.out by a logger.(öğ®¬ûÿÿÿÿ8ÒÍô‡À1
 n
-java:S2677Y"LUse or store the value returned from "readLine" instead of throwing it away.(£­—âÿÿÿÿÿ8İîâ¾1
-G	java:S106e"+Replace this use of System.out by a logger.(Ã¡ğÄ8–İîâ¾1
-G	java:S106h"+Replace this use of System.out by a logger.(ŸòŞù8–İîâ¾1
+java:S2677l"LUse or store the value returned from "readLine" instead of throwing it away.(£­—âÿÿÿÿÿ8ÓÍô‡À1
+G	java:S106x"+Replace this use of System.out by a logger.(Ã¡ğÄ8ÕÍô‡À1
+G	java:S106{"+Replace this use of System.out by a logger.(ŸòŞù8ÖÍô‡À1

@@ -7,12 +7,21 @@ import java.io.*;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Clase que representa la interfaz de usuario de la aplicación.
+ */
 public class Interfaz{
-    private static final long serialVersionUID = 1L;
-
+    /**
+     * Libreta de contactos.
+     */
     private Libreta libreta;
+    /**
+     * Scanner para leer datos desde la consola.
+     */
     private Scanner scanner;
-
+    /**
+     * Constructor de la clase.
+     */
     public Interfaz() {
         scanner = new Scanner(System.in);
 
@@ -21,10 +30,11 @@ public class Interfaz{
 
         libreta = new Libreta(nombre);
     }
-
-
+    /**
+     * Ejecuta la interfaz de usuario.
+     */
     public void ejecutar() {
-        cargarDatosCSV();  // Cambiar aquí
+        cargarDatosCSV();
         boolean salir = false;
         while (!salir) {
             System.out.println("Ingrese una instrucción (mostrar, añadir, salir): ");
@@ -48,7 +58,9 @@ public class Interfaz{
             }
         }
     }
-
+    /**
+     * Muestra los contactos de la libreta.
+     */
     private void mostrarLibreta() {
         List<Contacto> contactos = libreta.getContactos();
 
@@ -57,18 +69,23 @@ public class Interfaz{
         }
         System.out.println("El número total de contactos es: " + libreta.contarContactos());
     }
-
+    /**
+     * Agrega un contacto a la libreta.
+     */
     private void agregarContacto() {
         System.out.print("Ingrese el nombre del contacto: ");
         String nombre = scanner.nextLine();
         System.out.print("Ingrese el número de teléfono del contacto: ");
-        int numeroDeTelefono = Integer.parseInt(scanner.nextLine());
+        String numeroDeTelefono = scanner.nextLine();
 
         Contacto nuevoContacto = new Contacto(nombre, numeroDeTelefono);
         libreta.agregarContacto(nuevoContacto);
         System.out.println("Contacto añadido correctamente.");
     }
 
+    /**
+     * guarda los datos de la libreta en formato CSV.
+     */
     private void guardarDatosCSV() {
         try (PrintWriter writer = new PrintWriter(new FileWriter("libreta.csv"))) {
             writer.println("Nombre,Numero de Telefono");
@@ -82,7 +99,9 @@ public class Interfaz{
             System.out.println("Error al guardar los datos en formato CSV.");
         }
     }
-
+    /**
+     * Carga los datos de la libreta desde formato CSV.
+     */
     private void cargarDatosCSV() {
         try (BufferedReader reader = new BufferedReader(new FileReader("libreta.csv"))) {
             // Saltamos la primera línea que contiene los encabezados
@@ -93,7 +112,7 @@ public class Interfaz{
                 String[] parts = line.split(",");
                 if (parts.length == 2) {
                     String nombre = parts[0];
-                    int numeroDeTelefono = Integer.parseInt(parts[1]);
+                    String numeroDeTelefono = parts[1];
                     Contacto nuevoContacto = new Contacto(nombre, numeroDeTelefono);
                     libreta.agregarContacto(nuevoContacto);
                 }
